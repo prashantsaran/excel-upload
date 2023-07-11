@@ -1,0 +1,21 @@
+<input type="file" (change)="readExcel($event)">
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+
+        </tr>
+    </thead>
+
+
+
+    <tbody>
+        <tr *ngFor="let exceldata of exceldata">
+
+            <td> {{exceldata.Name}} </td>
+            <td> {{exceldata.Phone}} </td>
+            <td> {{exceldata.Email}} </td>
+        </tr>
+    </tbody>
