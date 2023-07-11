@@ -3,7 +3,7 @@
 
 ExcelUpload is a web application built with Angular CLI version 15.2.7. It provides a seamless and user-friendly solution for uploading Excel sheets and displaying the data in a tabular format. Additionally, it allows you to store the uploaded data in a database for further analysis and processing.
 
-#Features
+# Features
 Excel Sheet Upload: The application allows users to upload Excel sheets containing data they want to analyze.
 
 Tabular Data Display: Once the Excel sheet is uploaded, the application parses the data and presents it in a clean and organized tabular format. Users can easily view and explore the data.
