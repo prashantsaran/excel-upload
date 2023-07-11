@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DetailsServiceService {
-  detail: Detail[] = []; // Array to store details
+  detail:  Detail[] = []; // Array to store details
 
   postDetails!: Observable<any>; // Observable to store the POST request response
 

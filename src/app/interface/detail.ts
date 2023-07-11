@@ -1,5 +1,5 @@
 export interface Detail {
-    name:string,
-    email:string,
-    phone:string
+    name:string;
+    phone:string;
+    email:string;
 }
