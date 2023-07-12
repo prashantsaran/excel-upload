@@ -9,7 +9,7 @@ import { DetailsServiceService } from '../service/details-service.service';
 })
 export class UploadExcelComponent {
   exceldata: any
-  excelData: any
+  successMessage: boolean = false;
   constructor(private detailService: DetailsServiceService) { }
 
   // Function to read the uploaded Excel file
@@ -29,15 +29,14 @@ export class UploadExcelComponent {
       //converting sheetdata to json
       this.exceldata = XLSX.utils.sheet_to_json(workBook.Sheets[sheetNames[0]])
 
-
-
-
       this.detailService.addDetails(this.exceldata);
       this.detailService.postDetails.subscribe(response => {
 
         if (response.status === 200) {
-          console.log('&&', "Data has been added successfully");
+          this.successMessage = true;
         }
+
+
       });
     };
   }
